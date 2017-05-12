@@ -1382,7 +1382,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
         <!--Splash View Controller-->
         <scene sceneID="9LL-Ng-gxq">
             <objects>
-                <viewController storyboardIdentifier="SplashViewController" id="pzs-ON-7Pl" customClass="ISSplashViewController" customModule="iSaldos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SASplashViewController" id="pzs-ON-7Pl" customClass="SASplashViewController" customModule="iSaldos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nvW-fp-n65"/>
                         <viewControllerLayoutGuide type="bottom" id="Z4n-4C-eaW"/>
@@ -1406,7 +1406,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myImageLogoSaldos" destination="HRW-0O-UiR" id="8oJ-yW-hhD"/>
+                        <outlet property="myImageSplash" destination="HRW-0O-UiR" id="Ygy-j7-LpI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3k-hU-zT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
