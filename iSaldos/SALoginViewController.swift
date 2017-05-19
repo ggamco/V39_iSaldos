@@ -74,5 +74,9 @@ class SALoginViewController: UIViewController {
     func playerItem() {
         player.seek(to: kCMTimeZero)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
 }
