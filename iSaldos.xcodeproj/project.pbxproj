@@ -21,6 +21,8 @@
 		09CC811A1ECF712200A97DA3 /* SATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CC81191ECF712200A97DA3 /* SATabBarController.swift */; };
 		09CC811C1ECF7A5500A97DA3 /* SAOfertasTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CC811B1ECF7A5500A97DA3 /* SAOfertasTVC.swift */; };
 		09CC811E1ECF7A7B00A97DA3 /* SAOfertaDetalleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CC811D1ECF7A7B00A97DA3 /* SAOfertaDetalleTVC.swift */; };
+		09CC81201ECF83C300A97DA3 /* SAPromocionesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CC811F1ECF83C300A97DA3 /* SAPromocionesModel.swift */; };
+		09CC81221ECF856900A97DA3 /* SAAsociadoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CC81211ECF856900A97DA3 /* SAAsociadoModel.swift */; };
 		412741B51E9F93B20074CDD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412741B41E9F93B20074CDD7 /* AppDelegate.swift */; };
 		412741BA1E9F93B20074CDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412741B81E9F93B20074CDD7 /* Main.storyboard */; };
 		412741BC1E9F93B20074CDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 412741BB1E9F93B20074CDD7 /* Assets.xcassets */; };
@@ -76,6 +78,8 @@
 		09CC81191ECF712200A97DA3 /* SATabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATabBarController.swift; sourceTree = "<group>"; };
 		09CC811B1ECF7A5500A97DA3 /* SAOfertasTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAOfertasTVC.swift; sourceTree = "<group>"; };
 		09CC811D1ECF7A7B00A97DA3 /* SAOfertaDetalleTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAOfertaDetalleTVC.swift; sourceTree = "<group>"; };
+		09CC811F1ECF83C300A97DA3 /* SAPromocionesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPromocionesModel.swift; sourceTree = "<group>"; };
+		09CC81211ECF856900A97DA3 /* SAAsociadoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAAsociadoModel.swift; sourceTree = "<group>"; };
 		1258501E4571696ED0F16CDB /* Pods-iSaldos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSaldos.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSaldos/Pods-iSaldos.release.xcconfig"; sourceTree = "<group>"; };
 		35185A7F9FEA12C79F2C5A0E /* Pods-iSaldos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSaldos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSaldos/Pods-iSaldos.debug.xcconfig"; sourceTree = "<group>"; };
 		412741B11E9F93B20074CDD7 /* iSaldos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSaldos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -321,6 +325,8 @@
 			children = (
 				09CC81101ECF412B00A97DA3 /* SAEnumerationError.swift */,
 				09CC81121ECF426C00A97DA3 /* SASignIn.swift */,
+				09CC811F1ECF83C300A97DA3 /* SAPromocionesModel.swift */,
+				09CC81211ECF856900A97DA3 /* SAAsociadoModel.swift */,
 			);
 			name = MODELS;
 			sourceTree = "<group>";
@@ -541,7 +547,9 @@
 				09CC811A1ECF712200A97DA3 /* SATabBarController.swift in Sources */,
 				415101891EB8C371003B016D /* ISUsuariosCustomCell.swift in Sources */,
 				099845C31EC63BDE00C8B54E /* API_UTILS.swift in Sources */,
+				09CC81201ECF83C300A97DA3 /* SAPromocionesModel.swift in Sources */,
 				B45B0E271EB8E3670038D174 /* ISPostCustomCell.swift in Sources */,
+				09CC81221ECF856900A97DA3 /* SAAsociadoModel.swift in Sources */,
 				099845C51EC63DD400C8B54E /* RateApp.swift in Sources */,
 				4127420F1E9FC3800074CDD7 /* ISHomeViewController.swift in Sources */,
 				099845D11EC6451600C8B54E /* SARegistroTableViewController.swift in Sources */,

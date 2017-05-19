@@ -80,5 +80,43 @@ class SAMenuLateralTVC: UITableViewController {
         })
         
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 {
+            switch indexPath.row {
+            case 2:
+                sendMessage()
+            case 3:
+                showRateAlertInmediatly(self)
+            case 4:
+                logout()
+            default:
+                break
+            }
+        }
+    }
+    
+    func sendMessage() {
+        let mailComposeVC = configuredMailCompose()
+        mailComposeVC.mailComposeDelegate = self
+        
+        if MFMailComposeViewController.canSendMail() {
+            present(mailComposeVC, animated: true, completion: nil)
+        } else {
+            present(muestraAlertVC(titleData: "Atención", messageData: "El mail no se ha enviado correctamente"), animated: true, completion: nil)
+        }
+    }
+    
+    func logout() {
+        PFUser.logOut()
+    }
 
+}
+
+extension SAMenuLateralTVC : MFMailComposeViewControllerDelegate {
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
 }
