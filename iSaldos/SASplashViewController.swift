@@ -19,13 +19,6 @@ class SASplashViewController: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet weak var myImageSplash: UIImageView!
     
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

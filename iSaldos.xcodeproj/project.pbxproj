@@ -14,6 +14,8 @@
 		099845CB1EC6441000C8B54E /* SAGaleriaImagenesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099845CA1EC6441000C8B54E /* SAGaleriaImagenesViewController.swift */; };
 		099845CF1EC644FC00C8B54E /* SALoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099845CE1EC644FC00C8B54E /* SALoginViewController.swift */; };
 		099845D11EC6451600C8B54E /* SARegistroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099845D01EC6451600C8B54E /* SARegistroTableViewController.swift */; };
+		09CC81111ECF412B00A97DA3 /* SAEnumerationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CC81101ECF412B00A97DA3 /* SAEnumerationError.swift */; };
+		09CC81131ECF426C00A97DA3 /* SASignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CC81121ECF426C00A97DA3 /* SASignIn.swift */; };
 		412741B51E9F93B20074CDD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412741B41E9F93B20074CDD7 /* AppDelegate.swift */; };
 		412741BA1E9F93B20074CDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412741B81E9F93B20074CDD7 /* Main.storyboard */; };
 		412741BC1E9F93B20074CDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 412741BB1E9F93B20074CDD7 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		099845CA1EC6441000C8B54E /* SAGaleriaImagenesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAGaleriaImagenesViewController.swift; sourceTree = "<group>"; };
 		099845CE1EC644FC00C8B54E /* SALoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SALoginViewController.swift; sourceTree = "<group>"; };
 		099845D01EC6451600C8B54E /* SARegistroTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SARegistroTableViewController.swift; sourceTree = "<group>"; };
+		09CC81101ECF412B00A97DA3 /* SAEnumerationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAEnumerationError.swift; sourceTree = "<group>"; };
+		09CC81121ECF426C00A97DA3 /* SASignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SASignIn.swift; sourceTree = "<group>"; };
 		1258501E4571696ED0F16CDB /* Pods-iSaldos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSaldos.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSaldos/Pods-iSaldos.release.xcconfig"; sourceTree = "<group>"; };
 		35185A7F9FEA12C79F2C5A0E /* Pods-iSaldos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSaldos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSaldos/Pods-iSaldos.debug.xcconfig"; sourceTree = "<group>"; };
 		412741B11E9F93B20074CDD7 /* iSaldos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSaldos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -292,6 +296,8 @@
 		412742301E9FC67B0074CDD7 /* MODELS */ = {
 			isa = PBXGroup;
 			children = (
+				09CC81101ECF412B00A97DA3 /* SAEnumerationError.swift */,
+				09CC81121ECF426C00A97DA3 /* SASignIn.swift */,
 			);
 			name = MODELS;
 			sourceTree = "<group>";
@@ -503,6 +509,8 @@
 				099845C71EC63E0C00C8B54E /* API_HELPERS.swift in Sources */,
 				412741B51E9F93B20074CDD7 /* AppDelegate.swift in Sources */,
 				412741DA1E9F984B0074CDD7 /* SWRevealViewController.m in Sources */,
+				09CC81131ECF426C00A97DA3 /* SASignIn.swift in Sources */,
+				09CC81111ECF412B00A97DA3 /* SAEnumerationError.swift in Sources */,
 				412741E81E9FBF230074CDD7 /* CarbonTabSwipeSegmentedControl.m in Sources */,
 				099845CF1EC644FC00C8B54E /* SALoginViewController.swift in Sources */,
 				415101891EB8C371003B016D /* ISUsuariosCustomCell.swift in Sources */,

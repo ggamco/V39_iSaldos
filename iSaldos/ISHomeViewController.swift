@@ -45,7 +45,7 @@ class ISHomeViewController: UIViewController {
         botonFlotante.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: 64.0, height: 64.0))
         botonFlotante.setImage(UIImage(named: "boton_Menu_MiPerfil"), for: UIControlState())
         botonFlotante.center = CGPoint(x: self.view.bounds.width - 42.0, y: self.view.bounds.height - 100.0)
-        botonFlotante.addTarget(self, action: #selector(self.showVCNuevoComentario), for: .touchUpInside)
+        //botonFlotante.addTarget(self, action: #selector(self.showVCNuevoComentario), for: .touchUpInside)
         self.view.addSubview(botonFlotante)
     }
     
@@ -59,18 +59,18 @@ class ISHomeViewController: UIViewController {
         customTabSwipeNavigation.setNormalColor(customColor.withAlphaComponent(0.6))
         customTabSwipeNavigation.setSelectedColor(customColor, font: UIFont.boldSystemFont(ofSize: 14))
     }
-    
+    /*
     func showVCNuevoComentario(){
         let nuevoPostVC = self.storyboard?.instantiateViewController(withIdentifier: "NuevoPostTableViewController") as! ISNuevoPostTableViewController
         let navController = UINavigationController(rootViewController: nuevoPostVC)
         self.present(navController, animated: true, completion: nil)
     }
-    
+    */
 
     
 
 }
-
+/*
 extension ISHomeViewController : CarbonTabSwipeNavigationDelegate{
     
     
@@ -84,5 +84,5 @@ extension ISHomeViewController : CarbonTabSwipeNavigationDelegate{
     }
     
 }
-
+*/
 
