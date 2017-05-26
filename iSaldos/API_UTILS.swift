@@ -22,9 +22,9 @@ struct Colores {
 }
 
 struct Llamadas {
-    let BASE_URL = "http://api.clubsinergias.es/api_comercios.php?"
-    let BASE_URL_FOTO = "http://api.clubsinergias.es/uploads/promociones/"
-    let BASE_URL_LOCALIDAD = "idlocalidad"
+    let BASE_URL = "http://app.clubsinergias.es/api_comercios.php?"
+    let BASE_URL_FOTO = "http://app.clubsinergias.es/uploads/promociones/"
+    let BASE_URL_LOCALIDAD = "idlocalidad="
     let OFERTAS = "oferta"
     let CUPONES = "cupon"
     let CONCURSOS = "concurso"
