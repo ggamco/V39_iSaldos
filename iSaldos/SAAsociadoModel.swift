@@ -9,7 +9,33 @@
 import UIKit
 
 class SAAsociadoModel: NSObject {
-/*
-    {"id":"171","nombre":"Prado Muebles Colchones","descripcion":"Colchoner\u00eda Prado dispone de una amplia variedad de colchones, mobiliario de cama y auxiliar. Disponen tambi\u00e9n en su tienda de colchones de productos a medida de las necesidades y presupuestos de cada cliente en Alcorc\u00f3n.","condicionesEspeciales":"Te llevas 4% de cada compra superior a 50\u20ac en puntos.","direccion":"C\/ SAN PEDRO,18\/ C\/ MONTE, 6\/ C\/ DO\u00d1ANA, 2. ALCORC\u00d3N","idActividad":"166","idLocalidad":"11","imagen":null,"telefonoFijo":"916432976","telefonoMovil":null,"mail":"info@colchoneriasprado.com","web":"www.colchoneriasprado.com"}
- */
+
+    var id : String?
+    var nombre : String?
+    var descripcion : String?
+    var condicionesEspeciales : String?
+    var direccion : String?
+    var idActividad : String?
+    var idLocalidad : String?
+    var imagen : String?
+    var telefonoFijo : String?
+    var telefonoMovil : String?
+    var mail : String?
+    var web : String?
+    
+    init (p_id: String, p_nombre: String, p_descripcion: String, p_condicionesEspeciales: String, p_direccion: String, p_idActividad: String, p_idLocalidad: String, p_imagen: String, p_telefenoFijo: String, p_telefenoMovil: String, p_mail: String, p_web: String) {
+        self.id = p_id
+        self.nombre = p_nombre
+        self.descripcion = p_descripcion
+        self.condicionesEspeciales = p_condicionesEspeciales
+        self.direccion = p_direccion
+        self.idActividad = p_idActividad
+        self.idLocalidad = p_idLocalidad
+        self.imagen = p_imagen
+        self.telefonoFijo = p_telefenoFijo
+        self.telefonoMovil = p_telefenoMovil
+        self.mail = p_mail
+        self.web = p_web
+    }
+
 }
