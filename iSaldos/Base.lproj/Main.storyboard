@@ -167,7 +167,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QLt-7P-cOx" id="UaM-An-dzi">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -466,7 +466,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="U5C-5U-4lx"/>
                                 </constraints>
-                                <mutableString key="text">Para "TusOfertas.com " salvaguardar la privacidad de las personas registradas es algo fundamental.
+                                <string key="text">Para "TusOfertas.com " salvaguardar la privacidad de las personas registradas es algo fundamental.
 En el año 2000, al iniciar nuestro proyecto web reafirmamos nuestro compromiso ineludible con la confidencialidad, la reserva y la protección de los datos del " Usuario " que se registre en nuestro sitio web, por lo cual recomendamos la lectura detallada del texto completo que sigue a continuación.
 
 Esta Política de Confidencialidad reserva y protege los datos del Usuario, es complementaria a los " Términos y Condiciones " de uso de los sitios Web, texto que recomendamos leer muy detalladamente.
@@ -502,7 +502,7 @@ Al registrarse en Yanuq.com , el Usuario manifiesta que ha leído, entendido y a
 
 La Política de Confidencialidad, reserva y protección de datos, es un acuerdo legal entre el Usuario yYanuq.com.
 
-Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción competente la de la ciudad de Lima, con expresa renuncia, por parte del Usuario, de cualquier otra que pudiera corresponder en razón de las personas o del lugar de residencia del Usuario.</mutableString>
+Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción competente la de la ciudad de Lima, con expresa renuncia, por parte del Usuario, de cualquier otra que pudiera corresponder en razón de las personas o del lugar de residencia del Usuario.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1165,13 +1165,6 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="91 226 00 21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvB-jQ-hyg">
-                                                    <rect key="frame" x="58" y="8" width="129" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fijo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxU-ZX-Nhs">
                                                     <rect key="frame" x="8" y="8" width="45" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1193,13 +1186,6 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="www.cemvalderas.es" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9c-Sl-ArD">
-                                                    <rect key="frame" x="58" y="54" width="163" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Web:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGu-kK-Bsk">
                                                     <rect key="frame" x="8" y="54" width="45" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1207,15 +1193,37 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dralanvazquez@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DV-sc-Yi2">
-                                                    <rect key="frame" x="58" y="77" width="212" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFE-ud-8Bf">
+                                                    <rect key="frame" x="8" y="77" width="46" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFE-ud-8Bf">
-                                                    <rect key="frame" x="8" y="77" width="46" height="21"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g7-it-Wjs">
+                                                    <rect key="frame" x="58" y="3" width="103" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                                    <state key="normal" title="91 226 00 21">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="hacerLlamadaTelefonica:" destination="qU4-L3-6qi" eventType="touchUpInside" id="rzs-FQ-Lpc"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcK-iA-Fhh">
+                                                    <rect key="frame" x="58" y="48" width="173" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                                    <state key="normal" title="www.cemvalderas.es">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="muestraPaginaWebAsociado:" destination="qU4-L3-6qi" eventType="touchUpInside" id="mu1-8G-Riu"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dralanvazquez@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DV-sc-Yi2">
+                                                    <rect key="frame" x="58" y="77" width="212" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1256,15 +1264,82 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="xVO-3u-3eJ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myDescripcionAsociado" destination="je4-EQ-k65" id="sLC-D4-O3m"/>
+                        <outlet property="myDireccionAsociado" destination="eN1-1M-n48" id="yUP-h4-AIW"/>
+                        <outlet property="myEmailAsociado" destination="1DV-sc-Yi2" id="baf-Q5-4Lr"/>
+                        <outlet property="myFechaFin" destination="OvE-sh-hlw" id="SlE-5p-OPy"/>
+                        <outlet property="myImagen" destination="KDO-ik-LAj" id="8Vi-Vx-V8g"/>
+                        <outlet property="myMapaAsociado" destination="eH9-Y6-PVc" id="03d-6B-hcd"/>
+                        <outlet property="myMasInformacion" destination="Ycb-Ij-vlM" id="tVp-Ri-Zu2"/>
+                        <outlet property="myNombreAsociado" destination="BFU-zO-rXb" id="bdw-3S-7Eg"/>
+                        <outlet property="myNombreOferta" destination="abm-5H-wQn" id="lLp-EK-IX1"/>
+                        <outlet property="myTelefonoFijo" destination="8g7-it-Wjs" id="eQ5-Bu-Aul"/>
+                        <outlet property="myTelefonoMovilAsociado" destination="ybb-Xj-f5D" id="D1Z-pf-EyB"/>
+                        <outlet property="myWebAsociado" destination="vcK-iA-Fhh" id="XT9-FX-PNn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1iy-xa-ET2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2731.875" y="132.04225352112675"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="88e-dk-aI9">
+            <objects>
+                <viewController storyboardIdentifier="SAWebViewController" id="Mlw-bW-lNQ" customClass="SAWebViewController" customModule="iSaldos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lfp-mN-rkD"/>
+                        <viewControllerLayoutGuide type="bottom" id="73M-6T-PDh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JCi-q8-HGO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQE-cx-wp7">
+                                <rect key="frame" x="0.0" y="28" width="320" height="540"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTx-6E-gbe">
+                                <rect key="frame" x="290" y="28" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="IeT-la-eSz"/>
+                                    <constraint firstAttribute="height" constant="21" id="gYx-1N-bsj"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="cerrasX"/>
+                                <connections>
+                                    <action selector="cerrarVC:" destination="Mlw-bW-lNQ" eventType="touchUpInside" id="OlV-Ki-xTv"/>
+                                    <action selector="hideVC:" destination="1yV-fq-TJr" eventType="touchUpInside" id="Xz1-pn-dlw"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ooy-OC-FSw">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="73M-6T-PDh" firstAttribute="top" secondItem="LQE-cx-wp7" secondAttribute="bottom" id="Dz7-xR-uXJ"/>
+                            <constraint firstItem="Ooy-OC-FSw" firstAttribute="centerX" secondItem="JCi-q8-HGO" secondAttribute="centerX" id="HjF-ba-HKq"/>
+                            <constraint firstItem="qTx-6E-gbe" firstAttribute="top" secondItem="lfp-mN-rkD" secondAttribute="bottom" constant="8" id="Mf8-iE-3xR"/>
+                            <constraint firstItem="LQE-cx-wp7" firstAttribute="top" secondItem="lfp-mN-rkD" secondAttribute="bottom" constant="8" id="PYZ-dV-tAF"/>
+                            <constraint firstItem="LQE-cx-wp7" firstAttribute="leading" secondItem="JCi-q8-HGO" secondAttribute="leading" id="Q4M-bQ-FaN"/>
+                            <constraint firstAttribute="trailing" secondItem="qTx-6E-gbe" secondAttribute="trailing" constant="8" id="QTU-ks-d0h"/>
+                            <constraint firstItem="Ooy-OC-FSw" firstAttribute="centerY" secondItem="JCi-q8-HGO" secondAttribute="centerY" id="cht-3Q-oJf"/>
+                            <constraint firstAttribute="trailing" secondItem="LQE-cx-wp7" secondAttribute="trailing" id="uR0-9x-lku"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myActivityIndicator" destination="Ooy-OC-FSw" id="Bn2-xu-wqz"/>
+                        <outlet property="myWebView" destination="LQE-cx-wp7" id="ncp-yI-L0B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHw-oc-uN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3502.5" y="132.04225352112675"/>
+        </scene>
         <!--Cupones-->
         <scene sceneID="j44-4E-QAB">
             <objects>
-                <tableViewController storyboardIdentifier="CuponesTableViewController" id="D8E-Hi-jWN" customClass="ISCuponesTableViewController" customModule="iSaldos" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SACuponesTableViewController" id="D8E-Hi-jWN" customClass="SACuponesTableViewController" customModule="iSaldos" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="47" sectionHeaderHeight="22" sectionFooterHeight="22" id="5xf-5q-Dxn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1274,7 +1349,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                 <rect key="frame" x="0.0" y="22" width="320" height="47"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SEl-wu-eOD" id="Kl3-Na-bO3">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="46.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1290,6 +1365,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="menuBTN" destination="hlV-Wd-xm1" id="bq1-Rx-Sf1"/>
                         <segue destination="qzt-0p-lkA" kind="show" identifier="showCuponSegue" id="TDe-s4-e1w"/>
                     </connections>
                 </tableViewController>
@@ -1310,7 +1386,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                 <rect key="frame" x="0.0" y="22" width="320" height="46"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CX1-wY-mdV" id="7o1-gU-qgP">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="45.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1353,7 +1429,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sPO-a8-6K3" id="Sw0-2E-L6A">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1410,10 +1486,10 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
             </objects>
             <point key="canvasLocation" x="-4125" y="-717"/>
         </scene>
-        <!--Detalle Cupones View Controller-->
+        <!--Cupon Detalle Table View Controller-->
         <scene sceneID="Naz-Jt-IsG">
             <objects>
-                <tableViewController storyboardIdentifier="ISDetalleCuponesViewController" id="qzt-0p-lkA" customClass="ISDetalleCuponesViewController" customModule="iSaldos" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SACuponDetalleTableViewController" id="qzt-0p-lkA" customClass="SACuponDetalleTableViewController" customModule="iSaldos" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lf5-Z3-jsR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1425,7 +1501,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="241"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ckz-yo-8Vm" id="Xy9-Ej-CTa">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="240.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tff-ej-Lmj">
@@ -1445,7 +1521,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         <rect key="frame" x="0.0" y="241" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gzG-tG-go5" id="QgW-j4-Kyk">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRATIS fluoacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7re-eL-W1e">
@@ -1482,7 +1558,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         <rect key="frame" x="0.0" y="285" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yEu-Sf-KVm" id="Sv5-cF-sEF">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sólo por tiempo limitado!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9v-jt-1Ll">
@@ -1556,7 +1632,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         <rect key="frame" x="0.0" y="351" width="320" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gc4-0x-gBI" id="wcu-bc-p9c">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2016-12-31" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjH-Dv-ole">
@@ -1581,7 +1657,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         <rect key="frame" x="0.0" y="420" width="320" height="277"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sAe-Pe-wbk" id="lzi-R0-qLF">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="276.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="276"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CEM Valderas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfE-OP-kqW">
@@ -1617,7 +1693,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         <rect key="frame" x="0.0" y="697" width="320" height="32"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bLH-qk-rGd" id="ofH-LZ-qI8">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="31.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="31"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C\/ VENUS, 10 POSTERIOR. Alcorc\u00f3n (Madrid)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRG-LF-x24">
@@ -1644,7 +1720,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         <rect key="frame" x="0.0" y="729" width="320" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="geM-IP-doa" id="JoG-Wp-92x">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="113.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="113"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="91 226 00 21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07d-kf-XSS">
@@ -1711,7 +1787,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         <rect key="frame" x="0.0" y="843" width="320" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n3G-Au-AUf" id="tQ7-OA-NXp">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="118.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnk-B4-0hC">
@@ -1719,7 +1795,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" backgroundImage="qr"/>
                                                     <connections>
-                                                        <action selector="qrACTION:" destination="qzt-0p-lkA" eventType="touchUpInside" id="EEv-Ff-ido"/>
+                                                        <action selector="muestraCBAction:" destination="qzt-0p-lkA" eventType="touchUpInside" id="01S-pq-UcW"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Numero de Socio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fw5-Rf-YYi">
@@ -1752,24 +1828,24 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                     <navigationItem key="navigationItem" id="pms-Vz-fbo">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="T2m-BX-ZTm">
                             <connections>
-                                <action selector="shareSocialNetworkACTION:" destination="qzt-0p-lkA" id="pLo-yV-E34"/>
+                                <action selector="muestraActionSheetPersonalizado:" destination="qzt-0p-lkA" id="4Ek-wc-YjQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="idActividadAsociado" destination="6hx-zq-8xt" id="uYu-fi-dWF"/>
                         <outlet property="myDescripcionAsociado" destination="4u9-L9-ZOD" id="exg-Mc-F7V"/>
                         <outlet property="myDireccionAsociado" destination="bRG-LF-x24" id="ZqG-RJ-bSt"/>
                         <outlet property="myEmailAsociado" destination="a9d-rI-NvC" id="GMv-wQ-A7Z"/>
-                        <outlet property="myFechaOferta" destination="fjH-Dv-ole" id="OpD-W0-T6H"/>
-                        <outlet property="myFijoAsociado" destination="07d-kf-XSS" id="XLg-t1-PJ6"/>
-                        <outlet property="myIdActividad" destination="6hx-zq-8xt" id="BSG-YT-uAw"/>
-                        <outlet property="myImagenOferta" destination="Tff-ej-Lmj" id="zHq-bY-wJA"/>
-                        <outlet property="myInformacionOferta" destination="26I-zK-I3B" id="TCs-8e-QSV"/>
-                        <outlet property="myMovilAsociado" destination="ebM-eD-Hwd" id="EG7-1H-hVF"/>
+                        <outlet property="myFechaFin" destination="fjH-Dv-ole" id="4i2-aL-pNI"/>
+                        <outlet property="myImagen" destination="Tff-ej-Lmj" id="6qu-eD-s4m"/>
+                        <outlet property="myMasInformacion" destination="26I-zK-I3B" id="2xe-9u-jZr"/>
                         <outlet property="myNombreAsociado" destination="tfE-OP-kqW" id="6Cs-me-QbG"/>
                         <outlet property="myNombreOferta" destination="7re-eL-W1e" id="rdt-BY-tN4"/>
-                        <outlet property="myWebAsociado" destination="i1O-UD-J3P" id="FIq-Mi-74p"/>
+                        <outlet property="myTelefonoFijoAsociado" destination="07d-kf-XSS" id="gLG-QI-qkb"/>
+                        <outlet property="myTelefonoMovilAsociado" destination="ebM-eD-Hwd" id="kc0-q5-Kpz"/>
+                        <outlet property="myWebAsociado" destination="i1O-UD-J3P" id="wWk-3v-vTh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QFl-aC-do9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2459,7 +2535,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Ps-eb-Nmp" id="6eC-fk-dUu">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -2521,7 +2597,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fKd-ox-bDF" id="Unx-X1-qYN">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -2568,6 +2644,6 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="PMB-TT-YxY"/>
-        <segue reference="nX1-Ui-Xl1"/>
+        <segue reference="H3W-9g-Zj5"/>
     </inferredMetricsTieBreakers>
 </document>

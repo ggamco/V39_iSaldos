@@ -1,8 +1,8 @@
 //
-//  SAOfertasTVC.swift
+//  SACuponesTableViewController.swift
 //  iSaldos
 //
-//  Created by cice on 19/5/17.
+//  Created by cice on 26/5/17.
 //  Copyright © 2017 icologic. All rights reserved.
 //
 
@@ -11,11 +11,10 @@ import Kingfisher
 import PKHUD
 import PromiseKit
 
-class SAOfertasTVC: UITableViewController {
+class SACuponesTableViewController: UITableViewController {
 
     //MARK: - Variables Locales
-    var arrayOfertas = [SAPromocionesModel]()
-    
+    var arrayCupones = [SAPromocionesModel]()
     
     //MARK: - IBOutlets
     @IBOutlet weak var menuBTN: UIBarButtonItem!
@@ -24,7 +23,7 @@ class SAOfertasTVC: UITableViewController {
         super.viewDidLoad()
 
         //LLAMADA
-        llamadaOfertas()
+        llamadaCupones()
         
         //TODO: - Mostramos el menu lateral
         if revealViewController() != nil {
@@ -52,18 +51,19 @@ class SAOfertasTVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return arrayOfertas.count
+        return arrayCupones.count
     }
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let customCell = tableView.dequeueReusableCell(withIdentifier: "ISOfertaCustomCell", for: indexPath) as! ISOfertaCustomCell
         
-        let model = arrayOfertas[indexPath.row]
+        let model = arrayCupones[indexPath.row]
         customCell.myNombreOferta.text = model.nombre
         customCell.myFechaOferta.text = model.fechaFin
         customCell.myInformacionOferta.text = model.masInformacion
         customCell.myImporteOferta.text = model.importe
-        customCell.myImagenOferta.kf.setImage(with: ImageResource(downloadURL: URL(string: getImagePath(CONSTANTES.LLAMADAS.BASE_URL_FOTO, id: model.id!, nombre: model.imagen!))!),
+        customCell.myImagenOferta.kf.setImage(with: ImageResource(downloadURL: URL(string: getImagePath(CONSTANTES.LLAMADAS.CUPONES, id: model.id!, nombre: model.imagen!))!),
                                               placeholder: #imageLiteral(resourceName: "placeholder"),
                                               options: nil,
                                               progressBlock: nil,
@@ -77,18 +77,19 @@ class SAOfertasTVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showOfertaSegue", sender: self)
+        performSegue(withIdentifier: "showCuponSegue", sender: self)
     }
     
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showOfertaSegue" {
-            let detalleVC = segue.destination as! SAOfertaDetalleTVC
+        if segue.identifier == "showCuponSegue" {
+            let detalleVC = segue.destination as! SACuponDetalleTableViewController
             let selectIndex = tableView.indexPathForSelectedRow?.row
-            let objIndex = arrayOfertas[selectIndex!]
-            detalleVC.oferta = objIndex
+            let objIndex = arrayCupones[selectIndex!]
+            detalleVC.cupon = objIndex
             
             do {
-                let imageData = UIImage(data: try Data(contentsOf: URL(string: CONSTANTES.LLAMADAS.BASE_URL_FOTO + (objIndex.id)! + "/" + (objIndex.imagen)!)!))
+                let imageData = UIImage(data: try Data(contentsOf: URL(string: CONSTANTES.LLAMADAS.CUPONES + (objIndex.id)! + "/" + (objIndex.imagen)!)!))
                 detalleVC.detalleImagen = imageData
             } catch {
                 
@@ -96,25 +97,25 @@ class SAOfertasTVC: UITableViewController {
         }
     }
     
-    //MARK: - Utils
-    func llamadaOfertas() {
+    func llamadaCupones() {
         let datosOfertas = SAParserPromociones()
         let idLocalidad = "11"
-        let tipoOfertas = CONSTANTES.LLAMADAS.OFERTAS
+        let tipoOfertas = CONSTANTES.LLAMADAS.CUPONES
         let tipoParametro = CONSTANTES.LLAMADAS.PROMOCIONES_SERVICE
         
         HUD.show(.progress)
         firstly{
             return when(resolved: datosOfertas.getDatosPromociones(idLocalidad, idTipo: tipoOfertas, idParametro: tipoParametro))
             }.then { _ in
-                self.arrayOfertas = datosOfertas.getParserPromociones()
+                self.arrayCupones = datosOfertas.getParserPromociones()
             }.then { _ in
                 self.tableView.reloadData()
             }.then { _ in
                 HUD.hide(afterDelay: 0)
             }.catch { error in
                 self.present(muestraAlertVC(titleData: "AQUI", messageData: "PROBLEMAS DE DESCARGA"), animated: true, completion: nil)
-            }
+        }
+
     }
-    
+
 }

@@ -24,6 +24,11 @@
 		09CC81201ECF83C300A97DA3 /* SAPromocionesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CC811F1ECF83C300A97DA3 /* SAPromocionesModel.swift */; };
 		09CC81221ECF856900A97DA3 /* SAAsociadoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CC81211ECF856900A97DA3 /* SAAsociadoModel.swift */; };
 		09E9FDCC1ED8785F00CF4FB2 /* SAParserPromociones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9FDCB1ED8785F00CF4FB2 /* SAParserPromociones.swift */; };
+		09E9FDCE1ED8A45600CF4FB2 /* SAWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9FDCD1ED8A45600CF4FB2 /* SAWebViewController.swift */; };
+		09E9FDD01ED8B14A00CF4FB2 /* SACuponesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9FDCF1ED8B14A00CF4FB2 /* SACuponesTableViewController.swift */; };
+		09E9FDD21ED8B15600CF4FB2 /* SACuponDetalleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9FDD11ED8B15600CF4FB2 /* SACuponDetalleTableViewController.swift */; };
+		09E9FDD41ED8BFA500CF4FB2 /* ActionSheetStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E9FDD31ED8BFA500CF4FB2 /* ActionSheetStoryboard.storyboard */; };
+		09E9FDD61ED8C00800CF4FB2 /* SAActionSheetPersonalizadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9FDD51ED8C00800CF4FB2 /* SAActionSheetPersonalizadoViewController.swift */; };
 		412741B51E9F93B20074CDD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412741B41E9F93B20074CDD7 /* AppDelegate.swift */; };
 		412741BA1E9F93B20074CDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412741B81E9F93B20074CDD7 /* Main.storyboard */; };
 		412741BC1E9F93B20074CDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 412741BB1E9F93B20074CDD7 /* Assets.xcassets */; };
@@ -82,6 +87,11 @@
 		09CC811F1ECF83C300A97DA3 /* SAPromocionesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPromocionesModel.swift; sourceTree = "<group>"; };
 		09CC81211ECF856900A97DA3 /* SAAsociadoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAAsociadoModel.swift; sourceTree = "<group>"; };
 		09E9FDCB1ED8785F00CF4FB2 /* SAParserPromociones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParserPromociones.swift; sourceTree = "<group>"; };
+		09E9FDCD1ED8A45600CF4FB2 /* SAWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAWebViewController.swift; sourceTree = "<group>"; };
+		09E9FDCF1ED8B14A00CF4FB2 /* SACuponesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SACuponesTableViewController.swift; sourceTree = "<group>"; };
+		09E9FDD11ED8B15600CF4FB2 /* SACuponDetalleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SACuponDetalleTableViewController.swift; sourceTree = "<group>"; };
+		09E9FDD31ED8BFA500CF4FB2 /* ActionSheetStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionSheetStoryboard.storyboard; sourceTree = "<group>"; };
+		09E9FDD51ED8C00800CF4FB2 /* SAActionSheetPersonalizadoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAActionSheetPersonalizadoViewController.swift; sourceTree = "<group>"; };
 		1258501E4571696ED0F16CDB /* Pods-iSaldos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSaldos.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSaldos/Pods-iSaldos.release.xcconfig"; sourceTree = "<group>"; };
 		35185A7F9FEA12C79F2C5A0E /* Pods-iSaldos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSaldos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSaldos/Pods-iSaldos.debug.xcconfig"; sourceTree = "<group>"; };
 		412741B11E9F93B20074CDD7 /* iSaldos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSaldos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +205,7 @@
 				4127422F1E9FC6750074CDD7 /* API */,
 				412741EF1E9FC0710074CDD7 /* VIEWS_CONTROLLERS */,
 				412741B81E9F93B20074CDD7 /* Main.storyboard */,
+				09E9FDD31ED8BFA500CF4FB2 /* ActionSheetStoryboard.storyboard */,
 				412741BB1E9F93B20074CDD7 /* Assets.xcassets */,
 				412741BD1E9F93B20074CDD7 /* LaunchScreen.storyboard */,
 				412741C01E9F93B20074CDD7 /* Info.plist */,
@@ -283,6 +294,7 @@
 				412741FA1E9FC14C0074CDD7 /* ISOfertaCustomCell.xib */,
 				09CC811B1ECF7A5500A97DA3 /* SAOfertasTVC.swift */,
 				09CC811D1ECF7A7B00A97DA3 /* SAOfertaDetalleTVC.swift */,
+				09E9FDCD1ED8A45600CF4FB2 /* SAWebViewController.swift */,
 			);
 			name = OFERTAS;
 			sourceTree = "<group>";
@@ -290,6 +302,9 @@
 		412742061E9FC19D0074CDD7 /* CUPONES */ = {
 			isa = PBXGroup;
 			children = (
+				09E9FDCF1ED8B14A00CF4FB2 /* SACuponesTableViewController.swift */,
+				09E9FDD11ED8B15600CF4FB2 /* SACuponDetalleTableViewController.swift */,
+				09E9FDD51ED8C00800CF4FB2 /* SAActionSheetPersonalizadoViewController.swift */,
 			);
 			name = CUPONES;
 			sourceTree = "<group>";
@@ -460,6 +475,7 @@
 			files = (
 				4127423F1E9FD9640074CDD7 /* FOTO_4.jpg in Resources */,
 				412742401E9FD9640074CDD7 /* FOTO_5.jpg in Resources */,
+				09E9FDD41ED8BFA500CF4FB2 /* ActionSheetStoryboard.storyboard in Resources */,
 				B45B0E281EB8E3670038D174 /* ISPostCustomCell.xib in Resources */,
 				412742411E9FD9640074CDD7 /* FOTO_6.jpg in Resources */,
 				4151018A1EB8C371003B016D /* ISUsuariosCustomCell.xib in Resources */,
@@ -539,17 +555,21 @@
 				412741FB1E9FC14C0074CDD7 /* ISOfertaCustomCell.swift in Sources */,
 				41A3BBFF1EA1312900FC491F /* SRMiPerfilCustomCell.swift in Sources */,
 				09CC81181ECF70FC00A97DA3 /* SATerminosCondicionesVC.swift in Sources */,
+				09E9FDD01ED8B14A00CF4FB2 /* SACuponesTableViewController.swift in Sources */,
 				099845C71EC63E0C00C8B54E /* API_HELPERS.swift in Sources */,
+				09E9FDD21ED8B15600CF4FB2 /* SACuponDetalleTableViewController.swift in Sources */,
 				412741B51E9F93B20074CDD7 /* AppDelegate.swift in Sources */,
 				412741DA1E9F984B0074CDD7 /* SWRevealViewController.m in Sources */,
 				09CC811C1ECF7A5500A97DA3 /* SAOfertasTVC.swift in Sources */,
 				09CC81131ECF426C00A97DA3 /* SASignIn.swift in Sources */,
+				09E9FDD61ED8C00800CF4FB2 /* SAActionSheetPersonalizadoViewController.swift in Sources */,
 				09CC81111ECF412B00A97DA3 /* SAEnumerationError.swift in Sources */,
 				412741E81E9FBF230074CDD7 /* CarbonTabSwipeSegmentedControl.m in Sources */,
 				099845CF1EC644FC00C8B54E /* SALoginViewController.swift in Sources */,
 				09CC811A1ECF712200A97DA3 /* SATabBarController.swift in Sources */,
 				415101891EB8C371003B016D /* ISUsuariosCustomCell.swift in Sources */,
 				099845C31EC63BDE00C8B54E /* API_UTILS.swift in Sources */,
+				09E9FDCE1ED8A45600CF4FB2 /* SAWebViewController.swift in Sources */,
 				09CC81201ECF83C300A97DA3 /* SAPromocionesModel.swift in Sources */,
 				B45B0E271EB8E3670038D174 /* ISPostCustomCell.swift in Sources */,
 				09CC81221ECF856900A97DA3 /* SAAsociadoModel.swift in Sources */,
