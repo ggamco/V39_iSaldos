@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092C84E41EE1B51A0077A166 /* SANasaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C84E31EE1B51A0077A166 /* SANasaModel.swift */; };
+		092C84E61EE1B6E50077A166 /* SAParserNasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C84E51EE1B6E50077A166 /* SAParserNasa.swift */; };
+		092C84E81EE1BAFC0077A166 /* SANasaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C84E71EE1BAFC0077A166 /* SANasaTableViewController.swift */; };
+		092C84EA1EE1BE1D0077A166 /* SANasaDetalleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C84E91EE1BE1D0077A166 /* SANasaDetalleTableViewController.swift */; };
 		099845C31EC63BDE00C8B54E /* API_UTILS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099845C21EC63BDE00C8B54E /* API_UTILS.swift */; };
 		099845C51EC63DD400C8B54E /* RateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099845C41EC63DD400C8B54E /* RateApp.swift */; };
 		099845C71EC63E0C00C8B54E /* API_HELPERS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099845C61EC63E0C00C8B54E /* API_HELPERS.swift */; };
@@ -70,6 +74,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		092C84E31EE1B51A0077A166 /* SANasaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SANasaModel.swift; sourceTree = "<group>"; };
+		092C84E51EE1B6E50077A166 /* SAParserNasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParserNasa.swift; sourceTree = "<group>"; };
+		092C84E71EE1BAFC0077A166 /* SANasaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SANasaTableViewController.swift; sourceTree = "<group>"; };
+		092C84E91EE1BE1D0077A166 /* SANasaDetalleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SANasaDetalleTableViewController.swift; sourceTree = "<group>"; };
 		099845C21EC63BDE00C8B54E /* API_UTILS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_UTILS.swift; sourceTree = "<group>"; };
 		099845C41EC63DD400C8B54E /* RateApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateApp.swift; sourceTree = "<group>"; };
 		099845C61EC63E0C00C8B54E /* API_HELPERS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_HELPERS.swift; sourceTree = "<group>"; };
@@ -270,7 +278,7 @@
 				412742141E9FC4380074CDD7 /* SOCIAL */,
 				412741FF1E9FC1680074CDD7 /* OFERTAS */,
 				412742061E9FC19D0074CDD7 /* CUPONES */,
-				4127420D1E9FC1C60074CDD7 /* CONCURSOS */,
+				4127420D1E9FC1C60074CDD7 /* NASA */,
 				09CC81161ECF70CC00A97DA3 /* MENU */,
 			);
 			name = VIEWS_CONTROLLERS;
@@ -309,11 +317,13 @@
 			name = CUPONES;
 			sourceTree = "<group>";
 		};
-		4127420D1E9FC1C60074CDD7 /* CONCURSOS */ = {
+		4127420D1E9FC1C60074CDD7 /* NASA */ = {
 			isa = PBXGroup;
 			children = (
+				092C84E71EE1BAFC0077A166 /* SANasaTableViewController.swift */,
+				092C84E91EE1BE1D0077A166 /* SANasaDetalleTableViewController.swift */,
 			);
-			name = CONCURSOS;
+			name = NASA;
 			sourceTree = "<group>";
 		};
 		412742141E9FC4380074CDD7 /* SOCIAL */ = {
@@ -344,6 +354,7 @@
 				09CC81121ECF426C00A97DA3 /* SASignIn.swift */,
 				09CC811F1ECF83C300A97DA3 /* SAPromocionesModel.swift */,
 				09CC81211ECF856900A97DA3 /* SAAsociadoModel.swift */,
+				092C84E31EE1B51A0077A166 /* SANasaModel.swift */,
 			);
 			name = MODELS;
 			sourceTree = "<group>";
@@ -352,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				09E9FDCB1ED8785F00CF4FB2 /* SAParserPromociones.swift */,
+				092C84E51EE1B6E50077A166 /* SAParserNasa.swift */,
 			);
 			name = PARSERS;
 			sourceTree = "<group>";
@@ -548,8 +560,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092C84E41EE1B51A0077A166 /* SANasaModel.swift in Sources */,
+				092C84E61EE1B6E50077A166 /* SAParserNasa.swift in Sources */,
 				412741E61E9FBF230074CDD7 /* CarbonTabSwipeNavigation.m in Sources */,
 				099845CB1EC6441000C8B54E /* SAGaleriaImagenesViewController.swift in Sources */,
+				092C84E81EE1BAFC0077A166 /* SANasaTableViewController.swift in Sources */,
 				412741E71E9FBF230074CDD7 /* CarbonTabSwipeScrollView.m in Sources */,
 				099845C91EC6436E00C8B54E /* SASplashViewController.swift in Sources */,
 				412741FB1E9FC14C0074CDD7 /* ISOfertaCustomCell.swift in Sources */,
@@ -563,6 +578,7 @@
 				09CC811C1ECF7A5500A97DA3 /* SAOfertasTVC.swift in Sources */,
 				09CC81131ECF426C00A97DA3 /* SASignIn.swift in Sources */,
 				09E9FDD61ED8C00800CF4FB2 /* SAActionSheetPersonalizadoViewController.swift in Sources */,
+				092C84EA1EE1BE1D0077A166 /* SANasaDetalleTableViewController.swift in Sources */,
 				09CC81111ECF412B00A97DA3 /* SAEnumerationError.swift in Sources */,
 				412741E81E9FBF230074CDD7 /* CarbonTabSwipeSegmentedControl.m in Sources */,
 				099845CF1EC644FC00C8B54E /* SALoginViewController.swift in Sources */,

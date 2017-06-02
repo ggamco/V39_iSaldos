@@ -49,7 +49,18 @@ class SACuponDetalleTableViewController: UITableViewController {
             self.muestraImagenCB()
         }
         
+        //añadimos el gesto de reconocimiento para deselecionar
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(quitarCB))
+        view.addGestureRecognizer(tapGR)
+    }
+    
+    func quitarCB(){
         
+        for c_subView in self.view.subviews {
+            if c_subView.tag == self.imageGroupTag {
+                c_subView.removeFromSuperview()
+            }
+        }
     }
     
     @IBAction func muestraActionSheetPersonalizado(_ sender: Any) {

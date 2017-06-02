@@ -29,6 +29,7 @@ struct Llamadas {
     let CUPONES = "cupon"
     let CONCURSOS = "concurso"
     let PROMOCIONES_SERVICE = "promociones"
+    let URL_NASA = "http://nasa.teamcl.com/api/noticias.php"
 }
 
 struct CustomUserDefault {

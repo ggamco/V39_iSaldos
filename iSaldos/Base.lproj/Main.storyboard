@@ -48,11 +48,11 @@
             </objects>
             <point key="canvasLocation" x="1095" y="817.6056338028169"/>
         </scene>
-        <!--CONCURSOS-->
+        <!--NASA-->
         <scene sceneID="1zH-Bu-1Xj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hSU-54-QTl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="CONCURSOS" image="concursos" id="fz5-kY-E5E"/>
+                    <tabBarItem key="tabBarItem" title="NASA" image="concursos" id="fz5-kY-E5E"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SUP-qr-dbM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -581,7 +581,6 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         </state>
                                         <connections>
                                             <action selector="accederApp:" destination="CBe-ME-8gT" eventType="touchUpInside" id="94G-x6-sS5"/>
-                                            <action selector="accessApp:" destination="CBe-ME-8gT" eventType="touchUpInside" id="FIy-f4-yFl"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Splash_iSaldos" translatesAutoresizingMaskIntoConstraints="NO" id="RrL-Y0-wdN">
@@ -1373,10 +1372,10 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
             </objects>
             <point key="canvasLocation" x="1905" y="817.6056338028169"/>
         </scene>
-        <!--Concursos-->
+        <!--Nasa-->
         <scene sceneID="7Ii-Ed-rR9">
             <objects>
-                <tableViewController storyboardIdentifier="ConcursosTableViewController" id="ID8-5g-jtP" customClass="ISConcursosTableViewController" customModule="iSaldos" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SANasaTableViewController" id="ID8-5g-jtP" customClass="SANasaTableViewController" customModule="iSaldos" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="46" sectionHeaderHeight="22" sectionFooterHeight="22" id="kQD-5a-agO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1396,13 +1395,14 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                             <outlet property="delegate" destination="ID8-5g-jtP" id="E6s-xq-eXC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Concursos" id="p9Q-dt-7Kj">
+                    <navigationItem key="navigationItem" title="Nasa" id="p9Q-dt-7Kj">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="BTV-KY-bur">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="C2e-aM-EfB" kind="show" identifier="showConcursoSegue" id="1cJ-Ly-N92"/>
+                        <outlet property="menuBTN" destination="BTV-KY-bur" id="41m-H9-xAI"/>
+                        <segue destination="C2e-aM-EfB" kind="show" identifier="showNasaSegue" id="1cJ-Ly-N92"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSb-eC-x4H" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1852,10 +1852,10 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
             </objects>
             <point key="canvasLocation" x="2731.875" y="817.6056338028169"/>
         </scene>
-        <!--Detalle Concurso View Controller-->
+        <!--Nasa Detalle Table View Controller-->
         <scene sceneID="xuc-7z-R8m">
             <objects>
-                <tableViewController storyboardIdentifier="ISDetalleConcursoViewController" id="C2e-aM-EfB" customClass="ISDetalleConcursoViewController" customModule="iSaldos" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SANasaDetalleTableViewController" id="C2e-aM-EfB" customClass="SANasaDetalleTableViewController" customModule="iSaldos" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kjn-eD-ouG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1994,33 +1994,8 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                             </tableViewSection>
                             <tableViewSection id="LDR-Uu-1oq">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="69" id="iMO-rH-Tuh">
-                                        <rect key="frame" x="0.0" y="351" width="320" height="69"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iMO-rH-Tuh" id="qXT-fo-6af">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2016-12-31" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pC-ap-zB6">
-                                                    <rect key="frame" x="248" y="4" width="66" height="15"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="\u00a1Gratis radiograf\u00eda panor\u00e1mica de la boca!, con la primera visita Premium" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9u-zQ-GLq">
-                                                    <rect key="frame" x="6" y="4" width="235" height="61"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="277" id="SE2-Ja-hi6">
-                                        <rect key="frame" x="0.0" y="420" width="320" height="277"/>
+                                        <rect key="frame" x="0.0" y="351" width="320" height="277"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SE2-Ja-hi6" id="sOJ-N8-x13">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="277"/>
@@ -2055,120 +2030,6 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="32" id="cHo-pn-gYE">
-                                        <rect key="frame" x="0.0" y="697" width="320" height="32"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cHo-pn-gYE" id="PCn-Hs-JGU">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C\/ VENUS, 10 POSTERIOR. Alcorc\u00f3n (Madrid)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vds-Ee-kO0">
-                                                    <rect key="frame" x="8" y="6" width="304" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Vds-Ee-kO0" secondAttribute="trailing" constant="8" id="E8L-Nw-nQB"/>
-                                                <constraint firstAttribute="bottom" secondItem="Vds-Ee-kO0" secondAttribute="bottom" constant="4.5" id="HYd-5t-gak"/>
-                                                <constraint firstItem="Vds-Ee-kO0" firstAttribute="leading" secondItem="PCn-Hs-JGU" secondAttribute="leading" constant="8" id="fUR-bo-vv1"/>
-                                                <constraint firstItem="Vds-Ee-kO0" firstAttribute="top" secondItem="PCn-Hs-JGU" secondAttribute="top" constant="6" id="jp4-7J-d1W"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection id="8HN-cU-Xaz">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="114" id="arI-fq-Go7">
-                                        <rect key="frame" x="0.0" y="729" width="320" height="114"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="arI-fq-Go7" id="Er0-dn-M9J">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="91 226 00 21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3O-hm-WO0">
-                                                    <rect key="frame" x="58" y="8" width="129" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fijo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0e-OO-zqS">
-                                                    <rect key="frame" x="8" y="8" width="45" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="659962348" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZO-O4-cyk">
-                                                    <rect key="frame" x="58" y="31" width="129" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movil:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNe-t9-L0N">
-                                                    <rect key="frame" x="8" y="31" width="45" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="www.cemvalderas.es" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDa-rN-BWv">
-                                                    <rect key="frame" x="58" y="54" width="163" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Web:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQV-dl-eyt">
-                                                    <rect key="frame" x="8" y="54" width="45" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dralanvazquez@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdn-uu-vRm">
-                                                    <rect key="frame" x="58" y="77" width="212" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nt-SL-tvf">
-                                                    <rect key="frame" x="8" y="77" width="46" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="289" id="WfN-GX-GAu">
-                                        <rect key="frame" x="0.0" y="843" width="320" height="289"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WfN-GX-GAu" id="i61-No-llH">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="289"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ykk-ww-Doq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="289"/>
-                                                </mapView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="ykk-ww-Doq" secondAttribute="bottom" id="hl2-C8-FfC"/>
-                                                <constraint firstItem="ykk-ww-Doq" firstAttribute="top" secondItem="i61-No-llH" secondAttribute="top" id="jce-B6-DI0"/>
-                                                <constraint firstItem="ykk-ww-Doq" firstAttribute="leading" secondItem="i61-No-llH" secondAttribute="leading" id="l8o-zb-kDt"/>
-                                                <constraint firstAttribute="trailing" secondItem="ykk-ww-Doq" secondAttribute="trailing" id="ul5-f9-331"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -2181,18 +2042,11 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                     <navigationItem key="navigationItem" id="Xap-Y2-8w7"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="myDescripcionAsociado" destination="aDz-7z-dFq" id="uz6-t3-UDa"/>
-                        <outlet property="myDireccionAsociado" destination="Vds-Ee-kO0" id="AXY-dg-kXZ"/>
-                        <outlet property="myEmailAsociado" destination="mdn-uu-vRm" id="Nm6-In-h5g"/>
-                        <outlet property="myFechaOferta" destination="6pC-ap-zB6" id="DYF-pH-lBe"/>
-                        <outlet property="myFijoAsociado" destination="r3O-hm-WO0" id="0J5-v7-UUR"/>
-                        <outlet property="myImagenOferta" destination="Pxk-WL-L37" id="Ilf-wg-Ich"/>
-                        <outlet property="myInformacionOferta" destination="j9u-zQ-GLq" id="JQd-1F-1gD"/>
-                        <outlet property="myMapView" destination="ykk-ww-Doq" id="Lmd-p9-OfA"/>
-                        <outlet property="myMovilAsociado" destination="nZO-O4-cyk" id="Zxb-OM-dSU"/>
-                        <outlet property="myNombreAsociado" destination="XFA-jn-rLR" id="FRq-mE-IlO"/>
-                        <outlet property="myNombreOferta" destination="fBE-QO-0re" id="mTh-Cu-6JA"/>
-                        <outlet property="myWebAsociado" destination="JDa-rN-BWv" id="Kj9-nQ-x9n"/>
+                        <outlet property="myExplicacion" destination="aDz-7z-dFq" id="4YC-GJ-8Sa"/>
+                        <outlet property="myFecha" destination="MSn-C8-wr5" id="5iu-wx-ljh"/>
+                        <outlet property="myImagenDetalle" destination="Pxk-WL-L37" id="0c9-dd-4fh"/>
+                        <outlet property="myTitulo" destination="fBE-QO-0re" id="poU-hE-m59"/>
+                        <outlet property="myTituloExplicacion" destination="XFA-jn-rLR" id="4xY-p0-9Fm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mh4-hA-6JX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2643,7 +2497,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
         <image name="rateApp" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PMB-TT-YxY"/>
+        <segue reference="Odd-gc-QFi"/>
         <segue reference="H3W-9g-Zj5"/>
     </inferredMetricsTieBreakers>
 </document>
