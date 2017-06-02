@@ -11,6 +11,10 @@
 		092C84E61EE1B6E50077A166 /* SAParserNasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C84E51EE1B6E50077A166 /* SAParserNasa.swift */; };
 		092C84E81EE1BAFC0077A166 /* SANasaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C84E71EE1BAFC0077A166 /* SANasaTableViewController.swift */; };
 		092C84EA1EE1BE1D0077A166 /* SANasaDetalleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C84E91EE1BE1D0077A166 /* SANasaDetalleTableViewController.swift */; };
+		092C84EC1EE1CCDC0077A166 /* ISNuevoPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C84EB1EE1CCDC0077A166 /* ISNuevoPostTableViewController.swift */; };
+		092C84EE1EE1CD800077A166 /* ISMuroSocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C84ED1EE1CD800077A166 /* ISMuroSocialViewController.swift */; };
+		092C84F01EE1CD950077A166 /* ISCanalSocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C84EF1EE1CD950077A166 /* ISCanalSocialViewController.swift */; };
+		092C84F21EE1CFA10077A166 /* SAUserPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C84F11EE1CFA10077A166 /* SAUserPostModel.swift */; };
 		099845C31EC63BDE00C8B54E /* API_UTILS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099845C21EC63BDE00C8B54E /* API_UTILS.swift */; };
 		099845C51EC63DD400C8B54E /* RateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099845C41EC63DD400C8B54E /* RateApp.swift */; };
 		099845C71EC63E0C00C8B54E /* API_HELPERS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099845C61EC63E0C00C8B54E /* API_HELPERS.swift */; };
@@ -78,6 +82,10 @@
 		092C84E51EE1B6E50077A166 /* SAParserNasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAParserNasa.swift; sourceTree = "<group>"; };
 		092C84E71EE1BAFC0077A166 /* SANasaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SANasaTableViewController.swift; sourceTree = "<group>"; };
 		092C84E91EE1BE1D0077A166 /* SANasaDetalleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SANasaDetalleTableViewController.swift; sourceTree = "<group>"; };
+		092C84EB1EE1CCDC0077A166 /* ISNuevoPostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISNuevoPostTableViewController.swift; sourceTree = "<group>"; };
+		092C84ED1EE1CD800077A166 /* ISMuroSocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISMuroSocialViewController.swift; sourceTree = "<group>"; };
+		092C84EF1EE1CD950077A166 /* ISCanalSocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISCanalSocialViewController.swift; sourceTree = "<group>"; };
+		092C84F11EE1CFA10077A166 /* SAUserPostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAUserPostModel.swift; sourceTree = "<group>"; };
 		099845C21EC63BDE00C8B54E /* API_UTILS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_UTILS.swift; sourceTree = "<group>"; };
 		099845C41EC63DD400C8B54E /* RateApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateApp.swift; sourceTree = "<group>"; };
 		099845C61EC63E0C00C8B54E /* API_HELPERS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_HELPERS.swift; sourceTree = "<group>"; };
@@ -331,6 +339,9 @@
 			children = (
 				B45B0E241EB8E3480038D174 /* CANAL/ MURO */,
 				4127420E1E9FC3800074CDD7 /* ISHomeViewController.swift */,
+				092C84EF1EE1CD950077A166 /* ISCanalSocialViewController.swift */,
+				092C84ED1EE1CD800077A166 /* ISMuroSocialViewController.swift */,
+				092C84EB1EE1CCDC0077A166 /* ISNuevoPostTableViewController.swift */,
 				4151018B1EB8D5E3003B016D /* USUARIOS */,
 				415101861EB8C35B003B016D /* MODEL_USER */,
 			);
@@ -355,6 +366,7 @@
 				09CC811F1ECF83C300A97DA3 /* SAPromocionesModel.swift */,
 				09CC81211ECF856900A97DA3 /* SAAsociadoModel.swift */,
 				092C84E31EE1B51A0077A166 /* SANasaModel.swift */,
+				092C84F11EE1CFA10077A166 /* SAUserPostModel.swift */,
 			);
 			name = MODELS;
 			sourceTree = "<group>";
@@ -560,6 +572,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092C84F01EE1CD950077A166 /* ISCanalSocialViewController.swift in Sources */,
 				092C84E41EE1B51A0077A166 /* SANasaModel.swift in Sources */,
 				092C84E61EE1B6E50077A166 /* SAParserNasa.swift in Sources */,
 				412741E61E9FBF230074CDD7 /* CarbonTabSwipeNavigation.m in Sources */,
@@ -569,6 +582,7 @@
 				099845C91EC6436E00C8B54E /* SASplashViewController.swift in Sources */,
 				412741FB1E9FC14C0074CDD7 /* ISOfertaCustomCell.swift in Sources */,
 				41A3BBFF1EA1312900FC491F /* SRMiPerfilCustomCell.swift in Sources */,
+				092C84F21EE1CFA10077A166 /* SAUserPostModel.swift in Sources */,
 				09CC81181ECF70FC00A97DA3 /* SATerminosCondicionesVC.swift in Sources */,
 				09E9FDD01ED8B14A00CF4FB2 /* SACuponesTableViewController.swift in Sources */,
 				099845C71EC63E0C00C8B54E /* API_HELPERS.swift in Sources */,
@@ -577,6 +591,7 @@
 				412741DA1E9F984B0074CDD7 /* SWRevealViewController.m in Sources */,
 				09CC811C1ECF7A5500A97DA3 /* SAOfertasTVC.swift in Sources */,
 				09CC81131ECF426C00A97DA3 /* SASignIn.swift in Sources */,
+				092C84EC1EE1CCDC0077A166 /* ISNuevoPostTableViewController.swift in Sources */,
 				09E9FDD61ED8C00800CF4FB2 /* SAActionSheetPersonalizadoViewController.swift in Sources */,
 				092C84EA1EE1BE1D0077A166 /* SANasaDetalleTableViewController.swift in Sources */,
 				09CC81111ECF412B00A97DA3 /* SAEnumerationError.swift in Sources */,
@@ -587,6 +602,7 @@
 				099845C31EC63BDE00C8B54E /* API_UTILS.swift in Sources */,
 				09E9FDCE1ED8A45600CF4FB2 /* SAWebViewController.swift in Sources */,
 				09CC81201ECF83C300A97DA3 /* SAPromocionesModel.swift in Sources */,
+				092C84EE1EE1CD800077A166 /* ISMuroSocialViewController.swift in Sources */,
 				B45B0E271EB8E3670038D174 /* ISPostCustomCell.swift in Sources */,
 				09CC81221ECF856900A97DA3 /* SAAsociadoModel.swift in Sources */,
 				099845C51EC63DD400C8B54E /* RateApp.swift in Sources */,

@@ -1421,8 +1421,8 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4mz-Be-Cct">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4mz-Be-Cct">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="sPO-a8-6K3">
@@ -1445,7 +1445,7 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myTableView" destination="4mz-Be-Cct" id="0rr-gL-GWI"/>
+                        <outlet property="myTableView" destination="4mz-Be-Cct" id="IuN-3G-fnT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUU-wY-QHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2358,18 +2358,17 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                     <navigationItem key="navigationItem" title="NUEVA POST" id="Kwu-3h-byW">
                         <barButtonItem key="rightBarButtonItem" title="X" id="2gc-UP-QXj">
                             <connections>
-                                <action selector="ocultarVC:" destination="as0-1Y-Yib" id="ywa-3Q-pDJ"/>
+                                <action selector="ocultarVC:" destination="as0-1Y-Yib" id="oCM-TY-7NM"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="myDescripcionFotoTip" destination="ad9-um-Pyw" id="GUy-9e-yKw"/>
-                        <outlet property="myFechaHumanoPerfil" destination="8sX-go-ivj" id="uC2-17-V4M"/>
-                        <outlet property="myImagenPerfil" destination="qpa-Av-31X" id="pU0-mw-XGO"/>
-                        <outlet property="myImagenPost" destination="2cx-ZD-Msr" id="WaB-Ei-kxh"/>
-                        <outlet property="myNombreApellido" destination="Ib2-ZO-VDj" id="br1-8g-Hiz"/>
-                        <outlet property="myUsernamePerfil" destination="MWR-bg-ECF" id="m2c-QT-46H"/>
-                        <outlet property="ocultarImagenBTN" destination="ZP8-ur-zdh" id="6oW-a4-Lk7"/>
+                        <outlet property="myDescripcionPoster" destination="ad9-um-Pyw" id="AUq-pJ-pl0"/>
+                        <outlet property="myFechaPerfil" destination="8sX-go-ivj" id="0Ry-Ha-Tmc"/>
+                        <outlet property="myImagenPerfil" destination="qpa-Av-31X" id="8Og-o0-1kK"/>
+                        <outlet property="myImagenPoster" destination="2cx-ZD-Msr" id="wI6-n0-2eH"/>
+                        <outlet property="myNombreCompleto" destination="Ib2-ZO-VDj" id="HEc-wL-z5a"/>
+                        <outlet property="myUsername" destination="MWR-bg-ECF" id="W5B-vE-cgH"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNo-AT-XQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2466,9 +2465,6 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                             <constraint firstAttribute="trailing" secondItem="7mO-TA-9jF" secondAttribute="trailing" id="lYn-r2-64Y"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="myTableView" destination="7mO-TA-9jF" id="c0b-tF-2wq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xyr-qE-xI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
